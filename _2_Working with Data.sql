@@ -103,7 +103,7 @@ WHERE Created_Time >= DATE_SUB(CURDATE(), INTERVAL 2 YEAR);
 SELECT Balance_account,
        CASE 
          WHEN Balance_account >= 5000 THEN 'High'
-         WHEN Balance_account BETWEEN 1000 AND 4999 THEN 'Medium'
+         WHEN Balance_account BETWEEN 1000 AND 5000 THEN 'Medium'
          ELSE 'Low'
        END AS Balance_Category
 FROM Account;
